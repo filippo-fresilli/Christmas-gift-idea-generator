@@ -173,5 +173,51 @@ router.get("/logout", (req, res, next) => {
   res.redirect("/elf-login");
 });
 
+router.get("/reset-password", (req, res, next)=> {
+  // send flash messages to the hbs file as "messages"
+  res.render("elf-views/elf-reset-password.hbs");
+});
+
+// router.post("/process-recover-password", (req, res, next)=> {
+//   const { email, originalPassword} = req.body;
+
+//   Elf.findOne( { email: { $eq: email }} )
+//   .then(elfDoc => {
+//     //HERE WE WILL CHECK IF THE EMAIL IS WRONG
+//     //userDoc will be empty if the email is wrong
+ 
+
+//     //check the password
+//     const {encryptedPassword} = elfDoc;
+//     //"compareSync()" will return FALSE if "originalPassword" is WRONG
+//     if (!bcrypt.compareSync(originalPassword, encryptedPassword)){
+//       // "req.flash()" is defined by "connect-flash"
+//       // (2 arguments: message type and message text)
+//       req.flash("error", "Incorrect password, try regain.");
+//       //next function to show correctly the "incorrect password"
+//       req.session.save(() => {
+//         res.redirect("/elf-login");
+//       });
+//       // redirect to the login page if the password is wrong
+//       res.redirect("/elf-login");
+
+//     }
+//     else {
+//       //"req.logIn()" is a PAssport method that calls "serializeUsers()"
+//       // (that saves the USER ID in the session)
+//       req.logIn(elfDoc, () => {
+
+//         // "req.flash()" is defined by "connect-flash"
+//         // (2 arguments: message type and message text)
+//         req.flash("success", "Log In success!");
+//              // redirect to the home page if the password is CORRECT
+//         res.redirect("/elf-login");
+
+//       })
+//     };
+//   })
+//   .catch(err => next(err));
+// });
+
 
 module.exports = router;

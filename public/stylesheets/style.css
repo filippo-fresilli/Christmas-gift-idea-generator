@@ -20,6 +20,9 @@ footer {
 .pos-fixed {
   position: fixed; }
 
+.pos-rel {
+  position: relative; }
+
 .back-btn-left-bttm {
   left: 0;
   bottom: 0; }
@@ -42,6 +45,9 @@ h1 {
 
 .font-ar-helv-sans {
   font-family: Arial, 'Helvetica', sans-serif; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
 
 .centered {
   position: fixed;
@@ -157,14 +163,23 @@ nav a {
 .pad-bttm-20 {
   padding-bottom: 20px; }
 
+.pad-bttm-40 {
+  padding-bottom: 40px; }
+
 .pad-top-20 {
   padding-top: 20px; }
 
-.pad-right-40 {
+.pad-r-40 {
   padding-right: 40px; }
+
+.pad-l-40 {
+  padding-left: 40px; }
 
 .pad-right-10 {
   padding-right: 10px; }
+
+.pad-top-15per {
+  padding-top: 15%; }
 
 .margin-auto {
   margin: auto; }
@@ -209,6 +224,9 @@ nav a {
 .border-rad-5 {
   border-radius: 5px; }
 
+.bord-rad-50 {
+  border-radius: 50%; }
+
 .bg-btn {
   background-color: #4caf50; }
 
@@ -223,7 +241,7 @@ nav a {
   width: 50px;
   border-radius: 50%; }
 
-.img-check {
+.img-30x30 {
   height: 30px;
   width: 30px; }
 

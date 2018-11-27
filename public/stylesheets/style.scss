@@ -28,6 +28,10 @@ footer {
   position: fixed;
 }
 
+.pos-rel {
+  position: relative;
+}
+
 .back-btn-left-bttm {
   // position: absolute;
   left: 0;
@@ -58,6 +62,10 @@ h1 {
 
 .font-ar-helv-sans {
   font-family: Arial, 'Helvetica', sans-serif; 
+}
+
+.flex-wrap {
+flex-wrap: wrap;
 }
 
 .centered {
@@ -212,16 +220,28 @@ nav a {
   padding-bottom: 20px;
 }
 
+.pad-bttm-40 {
+  padding-bottom: 40px;
+}
+
 .pad-top-20 {
   padding-top: 20px;
 }
 
-.pad-right-40 {
+.pad-r-40 {
   padding-right: 40px;
+}
+
+.pad-l-40 {
+  padding-left: 40px;
 }
 
 .pad-right-10 {
   padding-right: 10px;
+}
+
+.pad-top-15per {
+  padding-top: 15%;
 }
 
 // all margins used ----------------------------------------
@@ -284,6 +304,10 @@ nav a {
   border-radius: 5px;
 }
 
+.bord-rad-50 {
+  border-radius: 50%;
+}
+
 // all button properties used ----------------------------
 
 .bg-btn {
@@ -307,7 +331,7 @@ nav a {
   // text-align: center;
 }
 
-.img-check {
+.img-30x30 {
   height: 30px;
   width: 30px;
 }
