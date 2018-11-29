@@ -1,14 +1,54 @@
+a {
+  color: white; }
+
 body {
   padding: 0px;
   margin: 0px; }
 
-a {
-  color: white; }
+body, html {
+  height: 100%; }
 
-.a-google {
-  color: red; }
+.back-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
-/*# sourceMappingURL=style.css.map */
+.back-btn-left-bttm {
+  left: 0;
+  bottom: 0; }
+
+.bg-login {
+  background-image: url("../images/bg-login.jpeg");
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  background-position: center;
+  height: 100%; }
+
+.bg-workshop {
+  background-color: #981818; }
+
+.bg-homepage {
+  background-image: url("../images/treebackground.jpg");
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  background-position: center;
+  height: 100%; }
+
+.border-bottom-blk {
+  border-bottom: 3px solid black; }
+
+.border-rad-5 {
+  border-radius: 5px; }
+
+.bord-rad-50 {
+  border-radius: 50%; }
+
+.font-ar-helv-sans {
+  font-family: Arial, "Helvetica", sans-serif; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
 footer {
   left: 0;
   bottom: 0;
@@ -17,19 +57,9 @@ footer {
   color: white;
   text-align: center; }
 
-.pos-fixed {
-  position: fixed; }
-
-.pos-rel {
-  position: relative; }
-
-.back-btn-left-bttm {
-  left: 0;
-  bottom: 0; }
-
 h1 {
   text-align: center;
-  font-family: 'Helvetica' , sans-serif; }
+  font-family: "Helvetica", sans-serif; }
 
 .h3-login {
   font-size: 24px;
@@ -39,22 +69,18 @@ h1 {
   font-size: 24px;
   font-weight: bold; }
 
-.container {
-  display: flex;
-  justify-content: center; }
-
-.font-ar-helv-sans {
-  font-family: Arial, 'Helvetica', sans-serif; }
-
-.flex-wrap {
-  flex-wrap: wrap; }
-
 .centered {
   position: fixed;
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%); }
+
+.pos-fixed {
+  position: fixed; }
+
+.pos-rel {
+  position: relative; }
 
 .homepage-title {
   font-size: 80px;
@@ -73,7 +99,7 @@ ul {
 nav {
   background-color: #333;
   color: white;
-  font-family: 'Helvetica' , sans-serif; }
+  font-family: "Helvetica", sans-serif; }
 
 .float-l {
   float: left; }
@@ -83,7 +109,7 @@ li {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Helvetica' , sans-serif; }
+  font-family: "Helvetica", sans-serif; }
 
 .flex {
   display: flex; }
@@ -218,15 +244,6 @@ nav a {
   margin-left: 100px;
   margin-right: 100px; }
 
-.border-bottom-blk {
-  border-bottom: 3px solid black; }
-
-.border-rad-5 {
-  border-radius: 5px; }
-
-.bord-rad-50 {
-  border-radius: 50%; }
-
 .bg-btn {
   background-color: #4caf50; }
 
@@ -244,28 +261,6 @@ nav a {
 .img-30x30 {
   height: 30px;
   width: 30px; }
-
-.back-btn:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
-
-.bg-login {
-  background-image: url("../images/bg-login.jpeg");
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  width: 100%;
-  height: auto; }
-
-.bg-workshop {
-  background-color: #981818; }
-
-.bg-homepage {
-  background-image: url("../images/treebackground.jpg");
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  width: 100%;
-  height: auto; }
 
 .error-message {
   text-align: center; }
@@ -288,8 +283,8 @@ nav a {
 
 /* Style the label to display next to the inputs */
 /* Style the submit button */
-input[type=submit] {
-  background-color: #4CAF50;
+input[type="submit"] {
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -305,7 +300,9 @@ input[type=submit] {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0; } }
 
@@ -320,8 +317,8 @@ input[type=submit] {
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s; }
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s; }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -329,17 +326,34 @@ input[type=submit] {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #4caf50;
   cursor: pointer; }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #4caf50;
   cursor: pointer; }
 
 .text-align-center {
   text-align: center; }
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.middle {
+  display: table-cell;
+  vertical-align: middle; }
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  /*whatever width you want*/ }
 
 /*# sourceMappingURL=style.css.map */

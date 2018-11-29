@@ -1,88 +1,84 @@
-
 <div>
   <h1 class="homepage-title color-white flex margin-bttm-40 margin-top-40 j-center">
-    TINSEL IN A TANGLE?
+    Christmas Gift Idea Generator:
   </h1>
 </div>
 
-<section class="flex flex-wrap width-70 margin-auto">
 
-      <div class="width-50 pad-right-40 ">
-        <h2 class="homepage-subtitle color-white">Let us help you find the perfect gift in only 3 steps:</h2>
+<div class="flex flex-wrap max-width-900 inner j-center">
 
-       <div class="flex pad-top-20">
-          <img src="/images/check-mark.png" alt="check-mark" class="img-30x30 pad-right-10">
-          <h3 class="h3-index margin-top-0 color-white">Fill the Form.</h3>
-        </div>
+  <div class="width-50 pad-right-40 ">
+    <h2 class="homepage-subtitle color-white">Let us help you find the perfect gift in only 3 steps:</h2>
 
-       <div class="flex pad-top-20">
-          <img src="/images/check-mark.png" alt="check-mark" class="img-30x30 pad-right-10">
-          <h3 class="h3-index margin-top-0 color-white">Pay 1$.</h3>
-        </div>
+    <div class="flex pad-top-20">
+      <img src="/images/check-mark.png" alt="check-mark" class="img-30x30 pad-right-10">
+      <h3 class="h3-index margin-top-0 color-white">Fill the Form.</h3>
+    </div>
 
-        <div class="flex pad-top-20">
-          <img src="/images/check-mark.png" alt="check-mark" class="img-30x30 pad-right-10">
-          <h3 class="h3-index margin-top-0 color-white">Receive three Christmas Gift Ideas.</h3>
-        </div>
+    <div class="flex pad-top-20">
+      <img src="/images/check-mark.png" alt="check-mark" class="img-30x30 pad-right-10">
+      <h3 class="h3-index margin-top-0 color-white">Pay 1$.</h3>
+    </div>
 
-      </div>
+    <div class="flex pad-top-20">
+      <img src="/images/check-mark.png" alt="check-mark" class="img-30x30 pad-right-10">
+      <h3 class="h3-index margin-top-0 color-white">Receive three Christmas Gift Ideas.</h3>
+    </div>
 
-      <div class="card margin-bttm-40 border-rad-5 width-50">
+  </div>
 
-        <form action="/process-request" method="POST" class="block pad-40">
+  <div class="card margin-bttm-40 border-rad-5 width-50">
 
-          <label for="">
-            <p class="margins-p-name">Name:</p>
-            <input type="text" name="requesterName" placeholder="Type your Name" class="width-100 input-label"/>
-          </label>
-          
-          <label for="">
-            <p class="margins-p">Email adddress:</p>
-            <input type="email" name="requesterEmail" placeholder="Email address" class=" width-100 input-label"/>
-          </label>
+    <form action="/process-request" method="POST" class="block pad-40">
 
-          <label for="">
-            <p class="margins-p">Your budget:</p>
-            <input type="number" name="requesterBudget" placeholder="Insert your budget" class="width-100 input-label"/>
-          </label>
+      <label for="">
+        <p class="margins-p-name">Name:</p>
+        <input type="text" name="requesterName" placeholder="Type your Name" class="width-100 input-label" />
+      </label>
 
-  <!--
-            <option value="20000"></option>
-            <option value="50000"></option>
-  -->
+      <label for="">
+        <p class="margins-p">Email adddress:</p>
+        <input type="email" name="requesterEmail" placeholder="Email address" class=" width-100 input-label" />
+      </label>
 
-          <label for="">
-            <p class="margins-p">Recipient's Relationship:</p>
-            <input type="text" name="recipientRelationship" placeholder="How do you know your gift recipient?" class="width-100 input-label"/>
-          </label>
+      <label for="">
+        <p class="margins-p">Your budget:</p>
+        <input type="number" name="requesterBudget" placeholder="Insert your budget" class="width-100 input-label" />
+      </label>
 
-          <label>
-            <select name="recipientGender" class="margin-top-20 width-100">
-              <option value="male">My recipient is MALE</option>
-              <option value="female">My recipient is FEMALE</option>
-            </select>
-          </label>
+      <label for="">
+        <p class="margins-p">Recipient's Relationship:</p>
+        <input type="text" name="recipientRelationship" placeholder="How do you know your gift recipient?" class="width-100 input-label" />
+      </label>
 
-          <label for="">
-            <p class="margins-p">Recipient Age:</p>
-            <input type="number" name="recipientAge" placeholder="Recipient's Age?" class="width-100 input-label"/>
-          </label>
-          
+      <label>
+        <select name="recipientGender" class="margin-top-20 width-100">
+          <option value="male">My recipient is MALE</option>
+          <option value="female">My recipient is FEMALE</option>
+        </select>
+      </label>
 
-          <label for="">
-            <p class="margins-p">Additional info:</p>
-            <input type="text" name="recipientAdditionalInfo" placeholder="Anything else you'd like us to know?" class="width-100 input-label"/>
-          </label>
+      <label for="">
+        <p class="margins-p">Recipient Age:</p>
+        <input type="number" name="recipientAge" placeholder="Recipient's Age?" class="width-100 input-label" />
+      </label>
 
-          <button class="margin-top-20 width-100 pad-12 border-rad-5 bg-btn color-white">
-            <strong>Submit</strong>
-          </button>
 
-        </form>
-      </div>
-</section>
+      <label for="">
+        <p class="margins-p">Additional info:</p>
+        <input type="text" name="recipientAdditionalInfo" placeholder="Anything else you'd like us to know?" class="width-100 input-label" />
+      </label>
+
+      <button class="margin-top-20 width-100 pad-12 border-rad-5 bg-btn color-white">
+        <strong>Submit</strong>
+      </button>
+
+    </form>
+  </div>
+</div>
+
 
 <footer>
-  Want to help others find the perfect gifts? 
+  Want to help others find the perfect gifts?
   <a href="/elf-signup">BECOME AN ELF!</a>
 </footer>

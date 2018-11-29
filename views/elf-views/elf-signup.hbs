@@ -2,9 +2,7 @@
   {{secondTitle}}
 </h1>
 
-{{> flash_message}}
-
-<section class="flex width-70 margin-auto">
+<section class="flex max-width-900 inner j-center">
   <div class="pad-r-40">
     <h2 class="homepage-subtitle color-white">
       Becoming an Elf is an important choise,<br>you need to be very creative to suggest <br>three awesome gifts!
@@ -16,7 +14,10 @@
   </div>
 
   <div class="card width-100 border-rad-5">
+
+
     <form action="/process-signup" method="POST" class="pad-40">
+      {{> flash_message}}
 
       <label for="">
         <p class="margins-p-name">Name:</p>
@@ -44,9 +45,9 @@
 
     </form>
 
-      {{!-- <div class="flex j-center pad-bttn-20">
-        <a href="/google/login" class="a-google">Sign Up with Google</a>
-      </div> --}}
+    {{!-- <div class="flex j-center pad-bttn-20">
+      <a href="/google/login" class="a-google">Sign Up with Google</a>
+    </div> --}}
 
     <div class="flex j-center bg-color">
       <p>You are already an elf? <a href="/elf-login"> Log In</a></p>
@@ -56,5 +57,6 @@
 </section>
 
 <footer class="pos-fixed">
-  Proudly made by <a target="_blank" href="https://www.linkedin.com/in/filippofresilli/">Filippo</a> and <a href="">Heather</a> during IRONHACK Bootcamp.
+  Proudly made by <a target="_blank" href="https://www.linkedin.com/in/filippofresilli/">Filippo Fresilli</a> during
+  IRONHACK Bootcamp.
 </footer>

@@ -1,19 +1,72 @@
+a {
+  color: rgb(255, 255, 255);
+}
+
 body {
   padding: 0px;
   margin: 0px;
   // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
- }
-
-a {
-  color: rgb(255, 255, 255); 
-
 }
 
-.a-google {
-  color: red;
+body, html {
+  height: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+.back-btn:hover {
+  // background-color: #981818;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.back-btn-left-bttm {
+  // position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.bg-login {
+  background-image: url("../images/bg-login.jpeg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.bg-workshop {
+  background-color: #981818;
+}
+
+.bg-homepage {
+  background-image: url("../images/treebackground.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  // background-color: #242322;
+}
+
+// all border used ----------------------------------------
+
+.border-bottom-blk {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.border-rad-5 {
+  border-radius: 5px;
+}
+
+.bord-rad-50 {
+  border-radius: 50%;
+}
+
+// ----------------------------------------
+
+.font-ar-helv-sans {
+  font-family: Arial, "Helvetica", sans-serif;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
 
 footer {
   left: 0;
@@ -24,23 +77,9 @@ footer {
   text-align: center;
 }
 
-.pos-fixed {
-  position: fixed;
-}
-
-.pos-rel {
-  position: relative;
-}
-
-.back-btn-left-bttm {
-  // position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
 h1 {
   text-align: center;
-  font-family: 'Helvetica' , sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 .h3-login {
@@ -55,19 +94,6 @@ h1 {
   font-weight: bold;
 }
 
-.container {
-  display:flex;
-  justify-content: center;
-}
-
-.font-ar-helv-sans {
-  font-family: Arial, 'Helvetica', sans-serif; 
-}
-
-.flex-wrap {
-flex-wrap: wrap;
-}
-
 .centered {
   position: fixed;
   top: 50%;
@@ -76,15 +102,24 @@ flex-wrap: wrap;
   transform: translate(-50%, -50%);
 }
 
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+
 // index(home) page--------------------------------
 
-.homepage-title{
+.homepage-title {
   font-size: 80px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.homepage-subtitle{
+.homepage-subtitle {
   // font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
 }
@@ -99,7 +134,7 @@ ul {
 nav {
   background-color: #333;
   color: white;
-  font-family: 'Helvetica' , sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 .float-l {
@@ -111,7 +146,7 @@ li {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Helvetica' , sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 .flex {
@@ -171,15 +206,15 @@ nav a {
 // all cards used ----------------------------------------
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   // padding: 40px;
   max-width: 430px;
-  background-color: #ffff ;
+  background-color: #ffff;
 }
 
 .r-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 20px;
   margin: 10px;
@@ -187,7 +222,7 @@ nav a {
 }
 
 .l-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 20px;
   margin: 10px;
@@ -195,7 +230,7 @@ nav a {
 }
 
 .l-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 // all padding used ----------------------------------------
@@ -294,20 +329,6 @@ nav a {
   margin-right: 100px;
 }
 
-// all border used ----------------------------------------
-
-.border-bottom-blk {
-  border-bottom: 3px solid rgb(0, 0, 0);
-}
-
-.border-rad-5 {
-  border-radius: 5px;
-}
-
-.bord-rad-50 {
-  border-radius: 50%;
-}
-
 // all button properties used ----------------------------
 
 .bg-btn {
@@ -336,39 +357,12 @@ nav a {
   width: 30px;
 }
 
-
-.back-btn:hover {
-  // background-color: #981818;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.bg-login {
-  background-image: url("../images/bg-login.jpeg");
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
-
-.bg-workshop {
-  background-color: #981818;
-}
-
-.bg-homepage {
-  background-image:url("../images/treebackground.jpg");
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  // background-color: #242322;
-}
-
 .error-message {
   text-align: center;
 }
 
 .color-white {
-  color:white;
+  color: white;
 }
 //index(home) page--------------------------------
 
@@ -378,7 +372,7 @@ nav a {
   padding: 20px;
 }
 
-  /* Style inputs, select elements and textareas */
+/* Style inputs, select elements and textareas */
 // input[type=text], select, textarea{
 //   padding: 12px;
 //   border: 3px solid #39b541;
@@ -402,8 +396,8 @@ nav a {
 // }
 
 /* Style the submit button */
-input[type=submit] {
-  background-color: #4CAF50;
+input[type="submit"] {
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -421,7 +415,9 @@ input[type=submit] {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
@@ -437,12 +433,12 @@ input[type=submit] {
   -webkit-appearance: none;
   width: 100%;
   height: 10px;
-  border-radius: 5px;   
+  border-radius: 5px;
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
 .slider::-webkit-slider-thumb {
@@ -450,8 +446,8 @@ input[type=submit] {
   appearance: none;
   width: 25px;
   height: 25px;
-  border-radius: 50%; 
-  background: #4CAF50;
+  border-radius: 50%;
+  background: #4caf50;
   cursor: pointer;
 }
 
@@ -459,10 +455,32 @@ input[type=submit] {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #4caf50;
   cursor: pointer;
 }
 
 .text-align-center {
   text-align: center;
+}
+
+
+//------------- center div -------------
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  /*whatever width you want*/
 }
