@@ -1,4 +1,4 @@
-# christmas-generator
+# Christmas Gift Idea Generator:
 
 This project helps people struggeling to think of ideas to gift.
 
